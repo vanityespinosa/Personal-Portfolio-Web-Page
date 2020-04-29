@@ -47,7 +47,11 @@ header {
     background-color: var(--main-dark-blue);
     height: 12vh;
     box-shadow: 0px 5px 0px var(--main-blue);
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
 }
+
 #navbar #profile-link {
     margin-left: 2rem;
 }
