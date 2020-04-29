@@ -85,6 +85,7 @@ header {
     background-color: var(--secondary-dark-blue);
     color: var(--secondary-light-blue);
 }
+
 #projects h2 {
     margin-bottom: 2rem;
 }
@@ -110,4 +111,84 @@ header {
     display: flex;
     justify-content: space-evenly;
     padding: 1.5rem 0;
+}
+
+/***********************************************
+    Footer Section
+***********************************************/
+footer {
+    padding: 2.5rem 2rem;
+    background-color: black;
+    color: var(--secondary-light-blue);
+}
+
+footer a:hover {
+    color: var(--secondary-dark-blue) ;
+}
+
+
+
+/************************************************************
+  Desktop Design
+************************************************************/
+@media only screen and (min-width:1000px) {
+    /****************************************
+        Overall Element Styles
+    ****************************************/
+
+    /****************************************
+        Header Section Styles
+    ****************************************/
+    header {
+        justify-content: flex-end;
+        padding-right: 10%;
+        box-shadow: 0px 10px 0px var(--main-blue);
+        font-size: 1.75rem;
+    }
+
+    /****************************************
+        Welcome Section Styles
+    ****************************************/
+    #welcome-section h1 {
+        font-size: 5rem;
+    }
+    
+    #welcome-section p {
+        font-size: 3rem;
+    }
+
+    /***********************************************
+        Projects Section
+    ***********************************************/
+
+    #projects h2 {
+        font-size: 3rem;
+    }
+
+    #projects .project-tile h3 {
+        font-size: 2rem;
+    }
+
+    #projects .project-tile .website-img {
+        background: center / contain no-repeat url("/imgs/screenshot.png");
+    }
+
+    #projects .project-tile .links {
+        justify-content: center;
+    }
+
+    #projects .links a {
+        font-size: 1.75rem;
+    }
+
+    #projects .links a:first-child {
+        margin-right: 10rem;
+    }
+    /***********************************************
+        Footer Section
+    ***********************************************/
+    footer {
+        font-size: 1.50rem;;
+    }
+
 }
